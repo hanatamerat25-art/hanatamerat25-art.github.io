@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Hana | Web Developer Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav id="navbar">
+                <a href="index.html" class="logo">Hana.</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="mobile-toggle" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section class="about-detail section reveal">
+            <div class="container grid grid-2" style="align-items: center;">
+                <div class="about-img">
+                    <img src="images/profile.png" alt="Hana's Profile" style="width: 100%; max-width: 500px; border-radius: 40px; box-shadow: var(--shadow);">
+                </div>
+                <div class="about-content">
+                    <h1 style="font-size: 3rem; margin-bottom: 2rem;">A Craftswoman of <br><span style="color: var(--primary);">Clean Code</span></h1>
+                    <p>Hello, I'm Hana, a passionate web developer based in Addis Ababa. My journey in technology started with a simple curiosity about how things work on the web, which quickly evolved into a career dedicated to building elegant digital solutions.</p>
+                    <p>With a background in computer science and a keen eye for minimalist design, I bridge the gap between complex backend logic and intuitive frontend experiences. I believe that every line of code should serve a purpose and every pixel should enhance the user journey.</p>
+                    <p>When I'm not coding, you'll find me exploring new UI trends, contributing to open-source projects, or sharing my knowledge with the local tech community through mentorship and workshops.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section reveal" style="background-color: var(--surface);">
+            <div class="container">
+                <div class="section-title text-center" style="margin-bottom: 4rem;">
+                    <h2>Technical <span style="color: var(--primary);">Skills</span></h2>
+                    <p>Specialized tools and technologies I use to build robust applications.</p>
+                </div>
+                <div class="grid grid-3">
+                    <!-- Frontend -->
+                    <div class="card" style="padding: 2.5rem; text-align: center;">
+                        <i class="fas fa-code" style="font-size: 3rem; color: var(--primary); margin-bottom: 1.5rem;"></i>
+                        <h3 style="margin-bottom: 1.5rem;">Frontend</h3>
+                        <div class="skill-tags" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem;">
+                            <span class="card-tag">HTML5</span>
+                            <span class="card-tag">CSS3</span>
+                            <span class="card-tag">JavaScript</span>
+                            <span class="card-tag">React</span>
+                            <span class="card-tag">Vue.js</span>
+                        </div>
+                    </div>
+                    <!-- Tools -->
+                    <div class="card" style="padding: 2.5rem; text-align: center;">
+                        <i class="fas fa-tools" style="font-size: 3rem; color: var(--primary); margin-bottom: 1.5rem;"></i>
+                        <h3 style="margin-bottom: 1.5rem;">Tools</h3>
+                        <div class="skill-tags" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem;">
+                            <span class="card-tag">Git</span>
+                            <span class="card-tag">Figma</span>
+                            <span class="card-tag">Docker</span>
+                            <span class="card-tag">Webpack</span>
+                            <span class="card-tag">Vite</span>
+                        </div>
+                    </div>
+                    <!-- Other -->
+                    <div class="card" style="padding: 2.5rem; text-align: center;">
+                        <i class="fas fa-layer-group" style="font-size: 3rem; color: var(--primary); margin-bottom: 1.5rem;"></i>
+                        <h3 style="margin-bottom: 1.5rem;">Other</h3>
+                        <div class="skill-tags" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem;">
+                            <span class="card-tag">Responsive Design</span>
+                            <span class="card-tag">SEO</span>
+                            <span class="card-tag">Agile</span>
+                            <span class="card-tag">Testing</span>
+                            <span class="card-tag">API Integration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience section reveal">
+            <div class="container">
+                <div class="section-title text-center" style="margin-bottom: 4rem;">
+                    <h2>Work <span style="color: var(--primary);">Experience</span></h2>
+                    <p>A timeline of my professional growth and contributions.</p>
+                </div>
+                <div class="experience-timeline" style="position: relative; max-width: 800px; margin: 0 auto; padding: 2rem 0;">
+                    <!-- Line -->
+                    <div style="position: absolute; left: 20px; top: 0; width: 2px; height: 100%; background: var(--border);"></div>
+                    
+                    <!-- Entry 1 -->
+                    <div class="experience-item" style="position: relative; margin-bottom: 3rem; padding-left: 60px;">
+                        <div style="position: absolute; left: 11px; top: 5px; width: 20px; height: 20px; background: var(--primary); border-radius: 50%; border: 4px solid white; box-shadow: 0 0 0 4px var(--primary-light);"></div>
+                        <h3 style="margin-bottom: 0.5rem;">Senior Frontend Developer</h3>
+                        <p style="color: var(--primary); font-weight: 600; margin-bottom: 0.5rem;">Global Solutions Ltd | 2022 - Present</p>
+                        <p>Leading frontend development for enterprise platforms, optimizing performance, and mentoring junior developers in React and performance best practices.</p>
+                    </div>
+
+                    <!-- Entry 2 -->
+                    <div class="experience-item" style="position: relative; margin-bottom: 3rem; padding-left: 60px;">
+                        <div style="position: absolute; left: 11px; top: 5px; width: 20px; height: 20px; background: var(--primary); border-radius: 50%; border: 4px solid white; box-shadow: 0 0 0 4px var(--primary-light);"></div>
+                        <h3 style="margin-bottom: 0.5rem;">Freelance Web Developer</h3>
+                        <p style="color: var(--primary); font-weight: 600; margin-bottom: 0.5rem;">Independent | 2020 - 2022</p>
+                        <p>Designed and built custom portfolios, e-commerce sites, and SaaS landings for local and international clients across various industries.</p>
+                    </div>
+
+                    <!-- Entry 3 -->
+                    <div class="experience-item" style="position: relative; margin-bottom: 3rem; padding-left: 60px;">
+                        <div style="position: absolute; left: 11px; top: 5px; width: 20px; height: 20px; background: var(--primary); border-radius: 50%; border: 4px solid white; box-shadow: 0 0 0 4px var(--primary-light);"></div>
+                        <h3 style="margin-bottom: 0.5rem;">Junior Developer Intern</h3>
+                        <p style="color: var(--primary); font-weight: 600; margin-bottom: 0.5rem;">Tech Hub Addis | 2019 - 2020</p>
+                        <p>Assisted in the development of community projects and learned fundamentals of responsive web design and version control.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo" style="color: white; border-bottom: none;">Hana.</a>
+                    <p style="color: #666; margin-top: 1rem;">Building high-quality digital experiences from Addis Ababa.</p>
+                </div>
+                <ul class="nav-links footer-nav" style="display: flex; flex-direction: row; box-shadow: none; position: static; background: none; border: none; padding: 0;">
+                    <li><a href="index.html" style="color: #aaa;">Home</a></li>
+                    <li><a href="about.html" style="color: #aaa;">About</a></li>
+                    <li><a href="projects.html" style="color: #aaa;">Projects</a></li>
+                    <li><a href="contact.html" style="color: #aaa;">Contact</a></li>
+                </ul>
+                <div class="footer-socials">
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="mailto:your@email.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Hana. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

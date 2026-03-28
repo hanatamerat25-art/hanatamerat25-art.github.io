@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Hana</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav id="navbar">
+                <a href="index.html" class="logo">Hana.</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <button class="mobile-toggle" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Contact Section -->
+        <section class="contact section reveal">
+            <div class="container">
+                <div class="section-title text-center" style="margin-bottom: 5rem;">
+                    <h1 style="font-size: 3.5rem;">Get in <span style="color: var(--primary);">Touch</span></h1>
+                    <p style="max-width: 600px; margin-left: auto; margin-right: auto;">Have a project in mind or just want to say hi? Feel free to reach out using the form below or through my social channels.</p>
+                </div>
+
+                <div class="grid grid-2" style="gap: 4rem;">
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <h2 style="margin-bottom: 2rem;">Contact <span style="color: var(--primary);">Information</span></h2>
+                        <div class="info-items">
+                            <div class="info-item" style="display: flex; gap: 1.5rem; margin-bottom: 2rem; align-items: center;">
+                                <div style="width: 60px; height: 60px; background: var(--primary-light); color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: 0.2rem;">Email</h4>
+                                    <p style="margin-bottom: 0;">hanatamerat25@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="info-item" style="display: flex; gap: 1.5rem; margin-bottom: 2rem; align-items: center;">
+                                <div style="width: 60px; height: 60px; background: var(--primary-light); color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+                                    <i class="fas fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: 0.2rem;">Location</h4>
+                                    <p style="margin-bottom: 0;">Addis Ababa, Ethiopia</p>
+                                </div>
+                            </div>
+                            <div class="info-item" style="display: flex; gap: 1.5rem; margin-bottom: 2rem; align-items: center;">
+                                <div style="width: 60px; height: 60px; background: var(--primary-light); color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: 0.2rem;">LinkedIn</h4>
+                                    <p style="margin-bottom: 0;">linkedin.com/in/hana</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 style="margin-top: 3rem; margin-bottom: 1.5rem;">Follow Me</h3>
+                        <div class="footer-socials" style="margin-top: 1rem;">
+                            <a href="#" style="background: var(--surface); color: var(--secondary); width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: var(--transition); border: 1px solid var(--border);">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" style="background: var(--surface); color: var(--secondary); width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: var(--transition); border: 1px solid var(--border); margin-left: 1rem;">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" style="background: var(--surface); color: var(--secondary); width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: var(--transition); border: 1px solid var(--border); margin-left: 1rem;">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form card" style="padding: 3rem; box-shadow: var(--shadow); border: none;">
+                        <form id="contactForm" onsubmit="event.preventDefault(); alert('Message sent successfully!'); this.reset();">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="What are you interested in?" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Send Message <i class="fas fa-paper-plane" style="margin-left: 0.5rem;"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter section reveal" style="background: var(--secondary); color: white; border-radius: 40px; margin: 0 2rem 6rem; text-align: center;">
+            <div class="container">
+                <h2 style="color: white; margin-bottom: 1.5rem;">Stay in the Loop</h2>
+                <p style="color: #aaa; margin-bottom: 2.5rem; max-width: 500px; margin-left: auto; margin-right: auto;">Subscribe to my newsletter to receive updates on new projects, tech tips, and creative inspiration.</p>
+                <form onsubmit="event.preventDefault(); alert('Thanks for subscribing!'); this.reset();" style="display: flex; gap: 1rem; max-width: 500px; margin: 0 auto; flex-wrap: wrap; justify-content: center;">
+                    <input type="email" placeholder="Your email address" style="flex: 1; min-width: 250px; background: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.2); color: white;" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo" style="color: white; border-bottom: none;">Hana.</a>
+                    <p style="color: #666; margin-top: 1rem;">Building high-quality digital experiences from Addis Ababa.</p>
+                </div>
+                <ul class="nav-links footer-nav" style="display: flex; flex-direction: row; box-shadow: none; position: static; background: none; border: none; padding: 0;">
+                    <li><a href="index.html" style="color: #aaa;">Home</a></li>
+                    <li><a href="about.html" style="color: #aaa;">About</a></li>
+                    <li><a href="projects.html" style="color: #aaa;">Projects</a></li>
+                    <li><a href="contact.html" style="color: #aaa;">Contact</a></li>
+                </ul>
+                <div class="footer-socials">
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="mailto:your@email.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Hana. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
